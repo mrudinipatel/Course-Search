@@ -1,0 +1,110 @@
+/* <link rel="stylesheet" type="text/css" href="graphstyle_styles.css"> */
+
+/* styling the form */
+.form-section {
+  /* Styles for form section */
+  outline: solid #0077c0 2px;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Changed to column layout */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  box-sizing: border-box; /* Ensure consistent box sizing */
+  outline: solid #0077c0 2px; /* Border style */
+  padding: 5%;
+}
+
+.dark .form-section {
+  outline: solid hsla(0, 0%, 50%, 0.18) 2px;
+}
+
+button {
+  font-weight: bold;
+  padding: 7px 15px;
+}
+
+@media only screen and (max-width: 780px) {
+  .horizontal.even_space button {
+    margin-bottom: 20px;
+  }
+}
+
+#course_dropdown {
+  width: 100%;
+}
+
+/* Input field style */
+.input-field {
+  border-color: black;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%; /* Adjust width considering padding and border */
+  box-sizing: border-box; /* Ensure box-sizing consistency */
+}
+
+/* style the nodes/popups for courses in the graph */
+.node_p {
+  padding: 1%;
+  margin: 1%;
+  text-align: left;
+  /* max-width: 30%; */
+  /* word-break:break-all; */
+  white-space: normal;
+}
+
+.node_div {
+  max-width: fit-content;
+}
+
+.node_p_name {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.node_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* style the container in which the visualization loads */
+#visualizationContainer {
+  margin-top: 20px; /* Adjust margin as needed */
+  padding: 10px; /* Add padding as needed */
+  border: 2px solid #0077c0; /* Example border style */
+  background-color: transparent; /* Set background color to transparent */
+  /* Other styles for the visualization container */
+}
+
+.dark #visualizationContainer {
+  border: 2px solid hsla(0, 0%, 50%, 0.18);
+}
+
+/* text alignment */
+.text-container p,
+p {
+  text-align: left; /* Justify text to the left within <p> tags */
+}
+
+.heading-container,
+footer p {
+  text-align: center; /* Center-align contents horizontally */
+}
+
+.heading-container h2,
+h2 {
+  text-align: justify; /* Justify text */
+}
+
+.footer-container {
+  text-align: center;
+  width: 100%; /* Adjust width as needed */
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.dark div.vis-tooltip {
+  background-color: #1b1b1d;
+  color: rgb(226, 226, 226);
+}

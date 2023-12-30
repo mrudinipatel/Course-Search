@@ -1,0 +1,105 @@
+/* <link rel="stylesheet" type="text/css" href="courseSearch_styles.css"> */
+
+/* Using flex */
+form,
+.form {
+  display: flex;
+}
+
+.form {
+  justify-content: space-evenly;
+  outline: solid #0077c0 2px;
+  padding: 5%;
+}
+
+.dark .form {
+  outline: solid hsla(0,0%,50%,.18) 2px;
+}
+
+/* Style the input form */
+#takenCourse {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#takenCourse,
+.form label {
+  text-align: left;
+}
+
+.form textarea {
+  min-width: 10vw;
+  min-height: 10vw;
+}
+
+#courseSearch_includeNA {
+  margin: 15px;
+}
+
+.form #input_buttons input {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.courseSearch_main {
+  text-align: left;
+}
+
+#takenCourse > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+button,
+select,
+#submitPlanned {
+  background-color: #0077c0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dark #submitPlanned {
+  background-color: #ffca00;
+  color: black;
+}
+
+button,
+#submitPlanned {
+  font-weight: bold;
+  padding: 7px 15px;
+}
+
+.courseCard {
+  margin: 1%;
+}
+
+.submitButtons {
+  gap: 10px;
+  padding: 20px 20px 20px 10px;
+}
+
+#results {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* .dark #results {
+  .dark .input-field {
+    background-color: #1c1c1e;
+    color: rgb(226, 226, 226);
+    border: 1px solid hsla(0,0%,50%,.18);
+  }
+} */
+
+@media only screen and (max-width: 780px) {
+  .horizontal.even_space button {
+    margin-bottom: 20px;
+  }
+}

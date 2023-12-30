@@ -1,0 +1,40 @@
+services:
+    nginx:   
+        build: ./etc/nginx/
+        container_name: nginx-container  
+        ports:   
+            - 80:80
+        links:
+            - php
+        volumes_from:
+            - app-data
+    php:
+        build: ./etc/php/
+        container_name: php-container
+        expose:
+            - 9000
+        volumes_from:
+            - app-data
+    app-data:
+        image: php:8.2-fpm
+        container_name: app-data-container  
+        volumes:  
+            - ./src/:/var/www/html/
+        command: "true"
+    mysql:
+        image: mariadb:10.11
+        container_name: mysql-container
+        volumes_from:
+            - mysql-data
+        environment:  
+            MYSQL_ROOT_PASSWORD: test
+            MYSQL_DATABASE: test
+            MYSQL_USER: test
+            MYSQL_PASSWORD: test
+    mysql-data:
+        image: mariadb:10.11
+        container_name: mysql-data-container 
+        volumes:
+            - /var/lib/mysql
+        command: "true"
+

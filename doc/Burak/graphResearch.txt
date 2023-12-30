@@ -1,0 +1,6 @@
+Resources:
+- https://www.youtube.com/watch?v=jfpV7OBptYE
+- https://mermaid.js.org/intro/
+- https://jojozhuang.github.io/tutorial/creating-data-structure-diagrams-with-mermaid/
+- https://codepen.io/123unme/pen/BQwZzq
+- https://mermaid.js.org/config/theming.html

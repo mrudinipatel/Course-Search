@@ -1,0 +1,63 @@
+/* Set everything in this page's body to be left-aligned by default */
+main {
+  text-align: left;
+}
+
+.request {
+  margin-top: 2%;
+  margin-bottom: 7%;
+}
+
+/* Display JSON code */
+.json {
+  background-color: #eee;
+  max-width: max-content;
+  padding-right: 2px;
+}
+
+.dark .json{
+  background-color: #1b1b1d;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  padding: 5px;
+}
+
+code {
+  /* background-color: #eee; */
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+
+.uri {
+  background-color: #eee;
+}
+
+.dark .uri {
+  background-color: #1b1b1d;
+}
+
+/* Generic form styling */
+.api-form {
+  margin-bottom: 20px;
+}
+
+/* Form text style */
+.form-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Input field style */
+.input-field {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.requestList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

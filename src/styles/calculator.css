@@ -1,0 +1,76 @@
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.grade-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade-display {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.grade-display-row h4 {
+  margin-right: 10px; /* Adjust space between heading and display */
+}
+
+.dark .grade-display{
+  background-color: #1c1c1e;
+  color: rgb(226, 226, 226);
+  border: 1px solid hsla(0,0%,50%,.18);
+}
+
+.form-input {
+  width: 175px;
+  height: 30px;
+}
+
+.dark .form-input{
+  background-color: #1c1c1e;
+  color: rgb(226, 226, 226);
+  border: 1px solid hsla(0,0%,50%,.18);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#gradeInputs {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-input, .button-group button {
+  width: 75%;
+  margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+  .form-input, .button-group button {
+      width: auto;
+  }
+}
+
+h4 {
+  font-size: 1.0em;
+}
+

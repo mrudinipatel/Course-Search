@@ -1,0 +1,552 @@
+/* <link rel="stylesheet" type="text/css" href="styles.css"> */
+
+/* general styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dark a {
+  color: unset;
+}
+
+body.dark {
+  background-color: #1b1b1d;
+  color: rgb(226, 226, 226);
+}
+
+header {
+  background-color: #0077c0;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.homepage-header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/images/guelph.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.homepage-text {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.homepage-text h1 {
+  font-size: 62px;
+}
+
+.homepage-text p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #0077c0;
+  background: #0077c0;
+  transition: 1s;
+}
+
+.dark .hero-btn:hover {
+  border: 1px solid #bc9a10;
+  background: #bc9a10;
+}
+
+@media (max-width: 700px) {
+  .homepage-text h1 {
+    font-size: 20px;
+  }
+}
+
+.Services {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Services h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.Services p {
+  color: #1b1b1d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.dark .Services p {
+  color: #fff;
+}
+
+.service-column {
+  flex-basis: 16%;
+  background: #c7eeff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.dark .service-column {
+  background: #bc9a10;
+}
+
+.dark .service-column h3 {
+  color: #1b1b1d;
+}
+.dark .service-column p {
+  color: #1b1b1d;
+}
+
+#home_header {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(/images/guelph.jpeg);
+  background-size: cover;
+  padding: 4em 0;
+}
+
+.header_container {
+  backdrop-filter: blur(2.5px);
+  padding: 1px;
+  -webkit-text-stroke: 0.2px black;
+}
+
+nav {
+  background-color: #c7eeff;
+  padding: 0.5em 1em;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.dark nav {
+  background-color: black;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0 1em;
+  align-self: center;
+}
+
+.dark nav a {
+  color: rgb(226, 226, 226);
+}
+
+#hiddenLinks {
+  background-color: #dff5fe;
+  gap: 10px;
+  padding: 1em;
+  flex-direction: column;
+  position: sticky;
+  top: 51px;
+  z-index: 2000;
+}
+
+.dark #hiddenLinks {
+  background-color: #1c1c1e;
+}
+
+#hiddenLinks a {
+  color: #333;
+  text-decoration: none;
+  padding: 0 1em;
+  align-self: center;
+}
+
+.dark #hiddenLinks a {
+  color: rgb(226, 226, 226);
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+.hamburger > i {
+  font-size: 1.8em;
+}
+
+main {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #0077c0;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.dark footer {
+  background-color: black;
+}
+
+ul,
+ol {
+  padding-inline-start: 20px;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+button,
+select {
+  background-color: #0077c0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dark button,
+.dark select {
+  background-color: #ffca00;
+  color: black;
+}
+
+/* Submit button style */
+.submit-button {
+  padding: 8px 20px;
+  background-color: #0077c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark .submit-button {
+  background-color: #ffca00;
+  color: black;
+}
+
+/* Hover effect for input fields, buttons, selects */
+button:hover,
+select:hover,
+#submitPlanned:hover,
+.input-field:hover,
+.submit-button:hover {
+  color: black;
+  background-color: #c7eeff;
+}
+
+.dark button:hover,
+.dark select:hover,
+.dark .submit-button:hover,
+.dark #submitPlanned:hover {
+  background-color: #bc9a10;
+}
+
+.dark select:focus-visible {
+  outline-color: black;
+}
+
+.dark .input-field:hover {
+  background-color: unset;
+}
+
+.download-button {
+  background: #0077c0;
+  padding: 0.5em;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark .download-button {
+  background: #ffca00;
+  color: black;
+}
+
+.download-button:hover {
+  background: #c7eeff;
+  color: black;
+}
+
+.dark .download-button:hover {
+  background: #bc9a10;
+}
+
+.add-to-plan-btn {
+  margin-left: 1%;
+  min-width: 13%;
+  /* padding: 15px; */
+}
+
+/* flex classes */
+.vertical {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.v_form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.h_form {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.even_space {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.spacer {
+  min-width: 10%;
+}
+
+/* collapsible areas */
+/* Collapsible display (https://www.w3schools.com/howto/howto_js_collapsible.asp) */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #0077c0;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.planned_course{
+  margin-top: 1%;
+}
+
+.dark .collapsible {
+  background-color: #ffca00;
+  color: black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #c7eeff;
+}
+
+.dark.collapsible:hover {
+  background-color: #bc9a10;
+}
+
+.collapsible:focus {
+  border: 2px solid black;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #c7eeff;
+}
+
+.dark .collapsible_content {
+  background-color: #bc9a10;
+  color: black;
+}
+
+/* about page */
+.team-member {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 0.25rem;
+  display: flex;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  margin-bottom: 20px;
+}
+
+.dark .team-member {
+  border: 1px solid hsla(0, 0%, 50%, 0.18);
+}
+
+.team-member h3 {
+  margin: 0;
+}
+
+.team-member a {
+  background-color: #0077c0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dark .team-member a {
+  background-color: #bc9a10;
+  color: black;
+}
+
+.team-member a:focus {
+  border: 2px solid black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.team-member > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.team-member > div > div {
+  align-self: center;
+}
+
+/* index page */
+.hero-section {
+  position: relative;
+  height: 100%; /* Adjust the height as needed */
+  width: 100%;
+  background-color: #0077c0;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.hero-results {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-bottom: 2%;
+}
+
+.dark .hero-section {
+  background-color: black;
+  color: rgb(218, 218, 218);
+}
+
+.text-section {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.text-section li {
+  padding-bottom: 1em;
+}
+
+.hero-text {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  z-index: 2;
+}
+
+/* Input field style - shared across pages */
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dark .input-field {
+  background-color: #1c1c1e;
+  color: rgb(226, 226, 226);
+  border: 1px solid hsla(0, 0%, 50%, 0.18);
+}
+
+.input-label {
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  nav > a {
+    display: none;
+  }
+  nav > .download-button {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .h_form {
+    flex-direction: column;
+  }
+}
+
+#themeToggle {
+  margin: 0 1em;
+  border-radius: 50%;
+  height: auto;
+  padding: 0;
+  font-size:x-large;
+  background: none;
+}
+
+.dark .excel-img {
+  filter: invert(1);
+}

@@ -1,0 +1,14 @@
+Issues with their API:
+    - Not all fields are there
+    - CORS error
+
+How we plan to use it:
+    - Get all courses and populate the selection field
+    - Get all subjects and populate the dropdown filter
+    - Once the user submits, first call prereq endpoint without params to get their courses without prereqs.
+    - Then call prereq endpoint with selected courses.
+    - Save all of these courses in an array.
+    - Apply the filters to that array.
+    - Populate results.
+    - Depending on how they update the api, call getCourseByCode endpoint whenever user clicks on a result course to show all fields (description, credits, offering etc.)
+    - Reset cleans all results/selected courses/filters.

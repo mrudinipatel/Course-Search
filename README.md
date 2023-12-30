@@ -1,4 +1,5 @@
 # Course-Search
+Website URL: https://cis3760f23-09.socs.uoguelph.ca/
 
 Course Search is a full-stack, team project that allows users to browse, search, plan, and visualize over 1900 courses offered at the University of Guelph (all campuses). This project was developed for CIS*3760 (Software Engineering), taught by Greg Klotz, in the Fall 2023 semester.
 

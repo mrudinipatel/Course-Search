@@ -58,10 +58,10 @@ To summarize, this project was created using the following languages/frameworks:
 Currently, personal pages of each team member is only availble in light-mode. It may be worthwhile to modify these pages so dark-mode can be applied as well to make these webpages more consistent with the rest of the web application.
 
 ### Authors
-Olivia Biancucci
-Burak Duruk
+Olivia Biancucci 
+Burak Duruk 
 Jennifer Lithgow 
-Rashi Mathur
-Mrudini Patel
-Cavaari Taylor
-Sarah Toll
+Rashi Mathur 
+Mrudini Patel 
+Cavaari Taylor 
+Sarah Toll 

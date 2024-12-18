@@ -42,15 +42,11 @@ https://github.com/mrudinipatel/Course-Search/assets/68040676/0540fe7b-fd24-4fc1
 
 (I know. The video quality is horrible. Github only allows 10MB uploads :/)
 
-### Tech Stack 🤓
-- MS Excel, VBA
-- Python
-- PHP
-- JavaScript + vis.js
-- HTML5/CSS3
-- MySQL
-- NGINX
-- Docker
+### Tech Stack 🧮
+- **Database:** MS Excel, VBA, MySQL
+- **Backend:** Python, PHP
+- **Frontend:** JavaScript, vis.js, HTML5/CSS3
+- **Misc:** NGINX, Docker
 
 ### Future Improvements 🔮
 Currently, the personal pages of each member are only availble in light-mode. It may be worthwhile to modify these pages so dark-mode can be applied as well to make these webpages more consistent with the rest of the web app.
